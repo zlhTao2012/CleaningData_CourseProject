@@ -16,4 +16,4 @@ mergedData2<-mergedData1[order(c(mergedData1$suject,mergedData1$activity)),]
 
 mergedData2$Avg<-rowSums(mergedData2[,3:563])/561
 
-write.table(mergedData2, file = "./tidyDataset.csv", sep = ",", col.names = NA,qmethod = "double")
+write.table(mergedData2, file = "./tidyDataset.txt", sep = "\t")
